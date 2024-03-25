@@ -603,8 +603,6 @@ function Invoke-VulnAD {
     Write-Good "Created Public SMB Share"
     VulnAD-FirewallOff
     Write-Good "Firewall Turned Off"
-	Write-Output "Restarting in 30 seconds..."
-	Sleep 30; Restart-Computer
 }
 
 Invoke-VulnAD -UsersLimit 100 -DomainName "gamers.com"
